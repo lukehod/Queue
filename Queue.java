@@ -42,13 +42,14 @@ class QDemo {
 
     System.out.println("Use BigQueue to store the alphabet.");
     // put some numbers into BigQueue
-    for(i=0; i < 26; i++) BigQueue.put((char) 'A' + i);
-
+    for(i=0; i < 26; i++) {
+      BigQueue.put((char) ('A' + i));
+    }
     // retrieve and display elements from BigQueue
-    System.out.println("Contents of BigQueue: ");
+    System.out.print("Contents of BigQueue: ");
     for(i=0; i < 26; i++) {
       ch = BigQueue.get();
-      if (ch != (char) 0) System.out.print(char);
+      if (ch != (char) 0) System.out.print(ch);
     }
 
     System.out.println("\n");
