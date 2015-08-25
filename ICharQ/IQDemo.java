@@ -29,3 +29,8 @@ class FixedQueue implements ICharQ {
     return q[getloc++];
   }
 }
+
+// A circular queue
+class CircularQueue implements ICharQ{
+  
+}
